@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="200.0" stylesheets="@../CSS/darktheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.ToolbarController">
+   <children>
+      <JFXButton fx:id="user" mnemonicParsing="false" onAction="#profilo" prefHeight="100.0" prefWidth="200.0" styleClass="toolbar-buttons">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <graphic>
+            <FontAwesomeIconView glyphName="USER" size="35" translateX="-20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton mnemonicParsing="false" onAction="#home" prefHeight="100.0" prefWidth="200.0" styleClass="toolbar-buttons" text="Home">
+         <graphic>
+            <FontAwesomeIconView glyphName="HOME" size="35" translateX="-20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" styleClass="toolbar-buttons" text="Voli">
+         <graphic>
+            <FontAwesomeIconView glyphName="PLANE" size="35" translateX="-20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" styleClass="toolbar-buttons" text="Chat">
+         <graphic>
+            <FontAwesomeIconView glyphName="COMMENTING" size="35" translateX="-20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton mnemonicParsing="false" onAction="#setting" prefHeight="100.0" prefWidth="200.0" styleClass="toolbar-buttons" text="Mappe">
+         <graphic>
+            <FontAwesomeIconView glyphName="GLOBE" size="35" translateX="-20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton mnemonicParsing="false" onAction="#setting" prefHeight="100.0" prefWidth="200.0" styleClass="toolbar-buttons" text="Setting">
+         <graphic>
+            <FontAwesomeIconView glyphName="COG" size="35" translateX="-20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXButton mnemonicParsing="false" onAction="#logout" prefHeight="100.0" prefWidth="200.0" styleClass="toolbar-buttons" text="Logout">
+         <graphic>
+            <FontAwesomeIconView glyphName="SIGN_OUT" size="35" translateX="-20.0" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

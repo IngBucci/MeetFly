@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" prefHeight="640.0" prefWidth="1000.0" stylesheets="@../CSS/darktheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.MenuLayoutController">
+   <top>
+      <AnchorPane prefHeight="46.0" prefWidth="700.0" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <JFXHamburger fx:id="hamburger" alignment="CENTER" layoutX="26.0" layoutY="11.0" onMouseClicked="#pressedHamburger" prefHeight="58.0" prefWidth="53.0" styleClass="jfx-hamburger-icon" />
+            <Label layoutX="399.0" layoutY="10.0" styleClass="text-field-voli" text="MeetFly  App">
+               <font>
+                  <Font name="Impact" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="550.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" prefHeight="550.0" prefWidth="0.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefWidth="700.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

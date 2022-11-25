@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/darktheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.WindowUtenteController">
+   <children>
+      <Label fx:id="nickname" layoutX="39.0" layoutY="66.0" styleClass="text-field-voli" text="Nickname">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="indirizzo" layoutX="259.0" layoutY="66.0" styleClass="text-field-voli" text="Indirizzo destinazione">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="sesso" layoutX="67.0" layoutY="111.0" styleClass="text-field-voli" text="Sesso">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="216.0" text="Vuoi metterti in contatto con questo utente?">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="chat" layoutX="92.0" layoutY="275.0" onAction="#pressedChat" prefHeight="81.0" prefWidth="159.0" styleClass="login-button" text="Avvia Conversazione" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="mappaBtn" layoutX="352.0" layoutY="275.0" onAction="#pressedMappa" prefHeight="81.0" prefWidth="133.0" styleClass="login-button" text="Mappa" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

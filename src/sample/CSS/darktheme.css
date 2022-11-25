@@ -1,0 +1,110 @@
+* {
+    -fx-primary: #2A2E37;
+    -fx-secondary: #FFFF8D;
+    -fx-primarytext: #B2B2B2;
+    -fx-arancio: #FF9800;
+    -fx-rosso: #FF0000;
+    -fx-title: #F88017;
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+}
+
+.glyph-icon{
+    -fx-fill: -fx-primarytext;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+}
+
+.login-button{
+    -fx-border-color: -fx-secondary ;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.login-button:hover{
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-color: -fx-secondary ;
+    -fx-background-color: -fx-secondary;
+}
+
+
+.text-field{
+    -fx-text-fill: -fx-primarytext ;
+    -fx-font-size: 15pt;
+    -jfx-focus-color:-fx-secondary;
+}
+
+.credenziali-mancanti{
+    -jfx-unfocus-color: -fx-arancio;
+    -jfx-focus-color: -fx-arancio;
+}
+.credenziali-sbagliate{
+    -jfx-unfocus-color: -fx-rosso;
+    -jfx-focus-color: -fx-rosso;
+}
+/*____________________________________________________________________________________*/
+.tab{
+    -fx-background-color: -fx-primary;
+    -fx-pref-width: 350;
+    -fx-pref-height: 50;
+}
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+/*--------------------------------------------------------*/
+
+
+/*MENU STYLING*/
+.menu-bar{
+    -fx-base: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+
+.jfx-hamburger-icon{
+    -fx-spacing: 7;
+}
+
+.jfx-hamburger-icon StackPane{
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 5px;
+}
+/*____________________________________________________________________________________*/
+
+/*TOOLBAR BUTTONS*/
+.toolbar-buttons{
+    -fx-background-color: derive(-fx-primary, 20%);
+}
+.toolbar-buttons:hover{
+    -fx-text-fill: -fx-primary;
+    -fx-background-color: -fx-secondary;}
+
+.toolbar-buttons:hover  .glyph-icon {
+    -fx-fill: -fx-primary;
+}
+
+
+
+/*____________________________________________________________________________________*/
+.label{
+     -fx-text-fill: -fx-primarytext;
+ }
+.label-allert{
+    -fx-text-fill:-fx-rosso;
+}
+.label-tit{
+    -fx-text-fill: -fx-title;
+}
+.text-field-voli{
+    -fx-text-fill: -fx-secondary;
+}
+
+.check-box{
+    -fx-text-fill: -fx-primarytext;
+}
+
+

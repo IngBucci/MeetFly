@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="786.0" stylesheets="@../CSS/darktheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.RegistrazioneController">
+   <children>
+      <Label layoutX="239.0" layoutY="21.0" text="REGISTRAZIONE" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="145.0" layoutY="104.0" prefHeight="401.0" prefWidth="461.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="160.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="611.0" minWidth="10.0" prefWidth="232.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Nome" />
+            <JFXTextField fx:id="nome" maxWidth="250.0" promptText="Mario" style="-jfx-label-float: false;" GridPane.columnIndex="1" />
+            <Label text="Cognome" GridPane.rowIndex="1" />
+            <JFXTextField fx:id="cognome" maxWidth="250.0" promptText="Rossi" style="-jfx-label-float: false;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Data di Nascita" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="data_nascita" maxWidth="250.0" promptText="01-01-2000" style="-jfx-label-float: false;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Email" GridPane.rowIndex="3" />
+            <JFXTextField fx:id="email" maxWidth="250.0" promptText="esempio@email.com" style="-jfx-label-float: false;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Password" GridPane.rowIndex="4" />
+            <JFXPasswordField fx:id="confPassword" maxWidth="250.0" promptText="Password" style="-jfx-label-float: false;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Conferma Password" GridPane.rowIndex="5" />
+            <JFXPasswordField fx:id="confPassword1" maxWidth="250.0" promptText="Password" style="-jfx-label-float: false;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Nickname" GridPane.rowIndex="6" />
+            <Label text="Telefono" GridPane.rowIndex="7" />
+            <Label text="Età" GridPane.rowIndex="8" />
+            <Label text="Sesso" GridPane.rowIndex="9" />
+            <JFXTextField fx:id="nickname" maxWidth="250.0" promptText="Rossi23" style="-jfx-label-float: false;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <JFXTextField fx:id="telefono" maxWidth="250.0" promptText="333-1234567890" style="-jfx-label-float: false;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <JFXTextField fx:id="età" maxWidth="50.0" promptText="30" style="-jfx-label-float: false;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <children>
+                  <JFXCheckBox fx:id="uomoBtn" onAction="#pressedUomo" text="Uomo" />
+                  <JFXCheckBox fx:id="donnaBtn" onAction="#pressedDonna" text="Donna">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </JFXCheckBox>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER" layoutY="499.0" prefHeight="103.0" prefWidth="786.0" spacing="200.0">
+         <children>
+            <JFXButton fx:id="btn_indietro" onAction="#pressedIndietro" styleClass="login-button" text="Indietro" />
+            <JFXButton fx:id="btn_confirm" onAction="#pressedConfirm" styleClass="login-button" text="Conferma">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
